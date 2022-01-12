@@ -1,7 +1,7 @@
 import tensorflow as tf
-from chatbot_project.model.multi_head import MultiHeadAttention
+from model.multi_head import MultiHeadAttention
 import numpy as np
-from chatbot_project.model.positioning_encoding import Positional_Encoding
+from model.positioning_encoding import Positional_Encoding
 
 
 

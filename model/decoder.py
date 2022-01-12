@@ -1,7 +1,7 @@
 import tensorflow as tf
-from chatbot_project.model.padding_mask import create_padding_mask
-from chatbot_project.model.multi_head import MultiHeadAttention
-from chatbot_project.model.positioning_encoding import Positional_Encoding
+from model.padding_mask import create_padding_mask
+from model.multi_head import MultiHeadAttention
+from model.positioning_encoding import Positional_Encoding
 
 # 디코더의 첫번째 서브층(sublayer)에서 미래 토큰을 Mask하는 함수
 def create_look_ahead_mask(x):

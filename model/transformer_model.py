@@ -1,7 +1,7 @@
 import tensorflow as tf
-from chatbot_project.model.padding_mask import create_padding_mask
-from chatbot_project.model.encoder import encoder
-from chatbot_project.model.decoder import decoder, create_look_ahead_mask
+from model.padding_mask import create_padding_mask
+from model.encoder import encoder
+from model.decoder import decoder, create_look_ahead_mask
 
 
 def transformer(vocab_size, num_layers, dff,

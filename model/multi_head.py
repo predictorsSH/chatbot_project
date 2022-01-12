@@ -1,5 +1,5 @@
 import tensorflow as tf
-from chatbot_project.model.scaled_dot_product import scaled_dot_product_attention
+from model.scaled_dot_product import scaled_dot_product_attention
 
 class MultiHeadAttention(tf.keras.layers.Layer):
 

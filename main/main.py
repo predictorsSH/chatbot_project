@@ -1,13 +1,13 @@
 import tensorflow as tf
-from chatbot_project.preprocess.data_preprocessing import Data_preprcessing
-from chatbot_project.model.transformer_model import transformer
-from chatbot_project.main.custom_fnc import CustomSchedule
-from chatbot_project.preprocess.preprocess_func import preprocess_sentence
+from preprocess.data_preprocessing import Data_preprcessing
+from model.transformer_model import transformer
+from custom_fnc import CustomSchedule
+from preprocess.preprocess_func import preprocess_sentence
 
 
 BATCH_SIZE = 64
 BUFFER_SIZE = 20000
-FILE_PATH = '../../Dataset/ChatBotData.csv'
+FILE_PATH = '../ChatBotData.csv'
 
 #데이터준비
 DP = Data_preprcessing(FILE_PATH)
@@ -125,4 +125,4 @@ model.compile(optimizer=optimizer, loss=loss_function, metrics=[accuracy])
 model.load_weights(check_point_file_path)
 
 
-output = predict("멍청이!")
+output = predict("바보!")

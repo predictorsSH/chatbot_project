@@ -1,4 +1,4 @@
-from chatbot_project.preprocess.preprocess_func import *
+from preprocess.preprocess_func import *
 import tensorflow_datasets as tfds
 import tensorflow as tf
 
