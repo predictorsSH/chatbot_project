@@ -4,6 +4,7 @@ from model.transformer_model import transformer
 from custom_fnc import CustomSchedule
 from preprocess.preprocess_func import preprocess_sentence
 
+print('commit test')
 
 BATCH_SIZE = 64
 BUFFER_SIZE = 20000
